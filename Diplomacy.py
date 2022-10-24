@@ -31,21 +31,17 @@ def print_dict(d):
     for key in d:
         print(d[key])
 
-def inputs(*i):
-    #inp=inputs()
-    ###make a loop function that reads everything in input and automatically appends them to lis###
-    setup("hi")
+def inputs(): #makes a tuple of input strings
+    inp=[]              #makes a list with each input line as a new index
+    while 1:
+        i=input()
+        if i=="":
+            break
+        inp.append(i)
+    setup(inp)
 
-def setup(s):
-    lis=[]
+def setup(lis):
     d={}
-    s1="A Madrid Hold"
-    lis.append(s1)
-    s2="B Barcelona Move London"
-    lis.append(s2)
-    s3="C Paris Support B"
-    lis.append(s3)
-
     for x in range(len(lis)):                   #commence movements
         lis[x]=lis[x].split()                   #lis[x] is the string input (ex. A Madrid Hold)
         temp=lis[x][0]                          #lis[x][0] is the name of the army (ex. A), lis[x][1] is the location (ex. Madrid)
@@ -58,5 +54,8 @@ def setup(s):
 
     ###insert fight function; compare all locations, if 2+ armies are in same city, make them fight###
 
+def main():
+    inputs()
+
 if __name__ == "__main__":
-    inputs(input())
+    main()
