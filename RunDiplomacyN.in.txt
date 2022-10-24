@@ -1,0 +1,7 @@
+A Madrid Hold
+B Barcelona Move Paris
+C London Support B
+
+A Madrid Hold
+B Barcelona Move Madrid
+C London Support B
