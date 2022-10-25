@@ -18,7 +18,7 @@ class Army:
     def setMovement(self,newMovement):
         self.movement=newMovement
 
-    def newMovement(self,dict,location,newAction,alt=None):
+    def newMovement(self,dict,name,location,newAction,alt=None):
         #(self,dict,alt=None):
         if self.movement=='Hold':return
         elif self.movement=='Move':
@@ -46,8 +46,7 @@ def inputs(): #makes a tuple of input strings
     inp=[]              #makes a list with each input line as a new index
     while 1:
         i=input()
-        if i=="":
-            break
+        if i=="": break
         inp.append(i)
     setup(inp)
 
@@ -58,21 +57,18 @@ def setup(lis):
         lis[x]=lis[x].split()                           #lis[x] is the string input (ex. A Madrid Hold)
         temp=lis[x][0]                                  #lis[x][0] is the name of the army (ex. A), lis[x][1] is the location (ex. Madrid)
         d[temp]=Army(lis[x][0],lis[x][1],lis[x][2])     #d[temp] is the army object
-        lis[x].pop(0)                                   #lis[x] now only has location, newAction, and alt
+        #lis[x].pop(0)                                   #lis[x] now only has location, newAction, and alt
         #print(d[temp])
         d[temp].newMovement(d,*lis[x])                  #execute movement
         loc[temp]=d[temp].getLocation()                 #enter location into loc dict to reference; key=army name, value=location
         #print(d[temp])
     
     #print_dict(loc)
-    
-    ###insert fight function; compare all locations, if 2+ armies are in same city, make them fight###
-    fight(d,loc,lis)
-    
-    print_dict(d)
+    #print_dict(d)
 
-def fight(armies,locations,lis):   #takes a dictionary of armies (key=army name, value=army object) and dictionary of locations (key=army name, value=army location)
-    #loc=[]
+    supportTest(d,loc,lis)
+
+def supportTest(armies,locations,lis):   #takes a dictionary of armies (key=army name, value=army object) and dictionary of locations (key=army name, value=army location)
     locs={}                             #locs is a dictionary (key=army location, value=list of army names at that location)
     for key in locations:
         if locations[key] not in locs:
@@ -80,34 +76,26 @@ def fight(armies,locations,lis):   #takes a dictionary of armies (key=army name,
         else:
             locs[locations[key]].append(key)
 
-    for key in locs:
-        if len(locs[key])==1: del locs[key] #removes any location that only has one army since there won't be a fight there
+    rem={k:v for k,v in locs.items() if len(locs[k])!=1}    #rem is a dictionary (key=army location, value=list of armies at that location) with only fight areas
 
-    for key in locs:                #change all attacked armies Support to Hold
-        for x in locs[key]:
-            if armies[locs[x]].getMovement()=="Support":
-                armies[locs[x]].setMovement("Hold")
-
+    for key in rem:                #change all attacked armies Support to Hold
+        for x in rem[key]:         #x is the name of one army at the location rem[key]
+            if armies[x].getMovement()=="Support":
+                armies[x].setMovement("Hold")
+    
     for x in range(len(lis)):
         temp=lis[x][0]
         if armies[temp].getMovement()=="Support":
             armies[temp].newMovement(armies,*lis[x])    #run all the supports for armies that aren't being attacked
 
+    ### insert fight function; compare all locations, if 2+ armies are in same city, make them fight ###
     ### fight! go through all the remaining lists in locs (armies in one location) and see who (if anyone) wins ###
 
-    print_dict(locs) #tests where the armies are
+    #print("locs:")
+    #print_dict(locs) #tests where the armies are
 
+    #print("armies:")
     print_dict(armies) #true output    
-    
-
-    ### DON'T USE, NOT USING!!!! ###
-    #was in the for key in locations loop
-    #loc.append(locations[key])
-        ### if there are duplicates in loc, then there is more than 1 army at the location! ###
-    #loc=list(set(loc))                 #loc now has one copy of each location where an army is
-    
-    '''for x in loc:                       #trying to find where the 
-        pass'''
     
 
 def main():
