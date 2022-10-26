@@ -103,3 +103,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# move all the armies first
+# maybe have a list of all the existing locations
+# go through list of locations and check if there is more than 1 army in location(s)
+# for the locations w more than 1 army, check if any of the armies are supporting, and change to hold
+# for each army in a location, add the supports and find army with max support
+# check if max support is in the list more than once, if so every army dies
+# if max support only occurs once, army with max support wins and occupies location
