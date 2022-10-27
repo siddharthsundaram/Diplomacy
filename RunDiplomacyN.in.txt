@@ -5,3 +5,14 @@ C London Support B
 A Madrid Hold
 B Barcelona Move Madrid
 C London Support B
+
+A Madrid Hold
+B Barcelona Move Madrid
+C London Move Madrid
+D Paris Support B
+E Austin Support A
+
+A Madrid Hold
+B Barcelona Move Madrid
+C London Move Madrid
+D Paris Support B
