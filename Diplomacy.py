@@ -118,8 +118,8 @@ class Diplomacy:
 
 def diplomacy_solve(inputs):
     game = Diplomacy(inputs.split("\n"))
-    # print(game.res)
-    return game.res
+    # print(game.res + "\n")
+    return game.res + "\n"
 
 def diplomacy_read(s):
     """
@@ -143,7 +143,7 @@ def diplomacy_print(w, input, output):
     j the end       of the range, inclusive
     v the max cycle length
     """
-    w.write(str(input) + "\n" + str(output) + "\n")
+    w.write(str(input) + str(output))
 
 def diplomacy_eval(r, w):
     """
@@ -159,11 +159,11 @@ def diplomacy_eval(r, w):
 
 
 if __name__ == "__main__":
-    # diplomacy_solve("A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n")
+    diplomacy_solve("A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n")
     r = StringIO(("A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n"))
     # print(diplomacy_read(r))
     w = StringIO()
-    diplomacy_print(w, "A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n", "A [dead]\nB Madrid\nC London\n")
+    # diplomacy_print(w, "A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n", "A [dead]\nB Madrid\nC London\n")
     # diplomacy_eval(r, w)
     # w.getvalue()
 
