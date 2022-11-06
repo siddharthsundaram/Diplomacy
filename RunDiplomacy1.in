@@ -1,0 +1,28 @@
+A Madrid Hold
+B Barcelona Move Madrid
+C London Move Barcelona
+D Paris Support A
+E Cairo Support A
+F Austin Support B
+G Amsterdam Move Oslo
+H Oslo Move Amsterdam
+I Moscow Support G
+J Shanghai Support B
+K Tokyo Move Shanghai
+L Taipei Support J
+
+A Madrid
+B [dead]
+C Barcelona
+D Paris
+E Cairo
+F Austin
+G Oslo
+H Amsterdam
+I Moscow
+J Shanghai
+K [dead]
+L Taipei
+
+"A Madrid Hold\nB Barcelona Move Madrid\nC London Move Barcelona\nD Paris Support A\nE Cairo Support A\nF Austin Support B\nG Amsterdam Move Oslo\nH Oslo Move Amsterdam\nI Moscow Support G\nJ Shanghai Support B\nK Tokyo Move Shanghai\nL Taipei Support J\n"
+"A Madrid\nB [dead]\nC Barcelona\nD Paris\nE Cairo\nF Austin\nG Oslo\nH Amsterdam\nI Moscow\nJ Shanghai\nK [dead]\nL Taipei"

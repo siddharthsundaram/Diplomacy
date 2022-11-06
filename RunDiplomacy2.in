@@ -1,0 +1,28 @@
+A Madrid Move London
+B Barcelona Move London
+C Cairo Move London
+D Oslo Move London
+E Amsterdam Support A
+F Moscow Support B
+G Shanghai Support C
+H Tokyo Support D
+I Austin Move Amsterdam
+J Taipei Move Moscow
+K Stockholm Move Shanghai
+L Lima Move Tokyo
+
+A [dead]
+B [dead]
+C [dead]
+D [dead]
+E [dead]
+F [dead]
+G [dead]
+H [dead]
+I [dead]
+J [dead]
+K [dead]
+L [dead]
+
+"A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n"
+"A [dead]\nB [dead]\nC [dead]\nD [dead]\nE [dead]\nF [dead]\nG [dead]\nH [dead]\nI [dead]\nJ [dead]\nK [dead]\nL [dead]"
