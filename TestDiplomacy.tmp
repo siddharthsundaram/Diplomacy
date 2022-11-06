@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\vsid3\Documents\Fall 2022 Classes\CS330E\Projects\Project2\Diplomacy\TestDiplomacy.py", line 32, in <module>
+    a.test_solve_1()
+  File "C:\Users\vsid3\Documents\Fall 2022 Classes\CS330E\Projects\Project2\Diplomacy\TestDiplomacy.py", line 8, in test_solve_1
+    self.assertEqual(t, "A London\nB Madrid")
+  File "C:\Users\vsid3\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\vsid3\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 838, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != 'A London\nB Madrid'
+['A', ' ', 'M', 'a', 'd', 'r', 'i', 'd', ' ', 'M', 'o', 'v', 'e', ' ', 'L', 'o', 'n', 'd', 'o', 'n', '', 'B', ' ', 'L', 'o', 'n', 'd', 'o', 'n', ' ', 'M', 'o', 'v', 'e', ' ', 'M', 'a', 'd', 'r', 'i', 'd', '']

@@ -1,3 +1,5 @@
+from io import StringIO
+
 class Army:
     def __init__(self,name,location,movement):
         self.name=name
@@ -116,12 +118,54 @@ class Diplomacy:
 
 def diplomacy_solve(inputs):
     game = Diplomacy(inputs.split("\n"))
-    print(game.res)
+    # print(game.res)
     return game.res
+
+def diplomacy_read(s):
+    """
+    read a string of armies and actions
+    s a string
+    return a list split by army and corresponding action
+    """
+
+    a = []
+    for i in s:
+        a.append(str(i))
+    # a = s.split("\n")
+    # a.pop(-1)
+    return "".join(a)
+
+def diplomacy_print(w, input, output):
+    """
+    print three ints
+    w a writer
+    i the beginning of the range, inclusive
+    j the end       of the range, inclusive
+    v the max cycle length
+    """
+    w.write(str(input) + "\n" + str(output) + "\n")
+
+def diplomacy_eval(r, w):
+    """
+    r a reader
+    w a writer
+    """
+    # print(r)
+    inp = diplomacy_read(r)
+    # print(inp)
+    out = str(diplomacy_solve(inp))
+    # print(out)
+    diplomacy_print(w, inp, out)
 
 
 if __name__ == "__main__":
-    diplomacy_solve("A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n")
+    # diplomacy_solve("A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n")
+    r = StringIO(("A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n"))
+    # print(diplomacy_read(r))
+    w = StringIO()
+    diplomacy_print(w, "A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n", "A [dead]\nB Madrid\nC London\n")
+    # diplomacy_eval(r, w)
+    # w.getvalue()
 
 # move all the armies first
 # maybe have a list of all the existing locations
