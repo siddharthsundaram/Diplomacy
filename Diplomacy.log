@@ -1,3 +1,15 @@
+commit 6c60b36b4059a989bbecb3004f4a3efca40359c7
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Sun Nov 6 01:05:51 2022 -0600
+
+    wrote test cases for file reading and writing functions
+
+commit b04c40d2b2f930090e2ee698bccc37c5592d5b08
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Sun Nov 6 01:08:33 2022 -0500
+
+    adding makefile and read/write functions
+
 commit e16866ee5a9fa9c94dea05b366839a4217e76f4b
 Author: sidsun <siddharthsundaram@utexas.edu>
 Date:   Sat Nov 5 20:21:10 2022 -0500

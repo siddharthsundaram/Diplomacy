@@ -1,11 +1,49 @@
-Traceback (most recent call last):
-  File "C:\Users\vsid3\Documents\Fall 2022 Classes\CS330E\Projects\Project2\Diplomacy\TestDiplomacy.py", line 32, in <module>
-    a.test_solve_1()
-  File "C:\Users\vsid3\Documents\Fall 2022 Classes\CS330E\Projects\Project2\Diplomacy\TestDiplomacy.py", line 8, in test_solve_1
-    self.assertEqual(t, "A London\nB Madrid")
-  File "C:\Users\vsid3\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
-    assertion_func(first, second, msg=msg)
-  File "C:\Users\vsid3\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 838, in _baseAssertEqual
-    raise self.failureException(msg)
-AssertionError: None != 'A London\nB Madrid'
-['A', ' ', 'M', 'a', 'd', 'r', 'i', 'd', ' ', 'M', 'o', 'v', 'e', ' ', 'L', 'o', 'n', 'd', 'o', 'n', '', 'B', ' ', 'L', 'o', 'n', 'd', 'o', 'n', ' ', 'M', 'o', 'v', 'e', ' ', 'M', 'a', 'd', 'r', 'i', 'd', '']
+A London
+B Madrid
+
+test 1 passed
+A London
+
+test 2 passed
+A [dead]
+B Madrid
+C London
+
+test 3 passed
+A [dead]
+B [dead]
+C [dead]
+
+test 4 passed
+A [dead]
+B [dead]
+C [dead]
+D Paris
+E Austin
+
+test 5 passed
+test 6 passed
+test 7 passed
+test 8 passed
+A [dead]
+B Madrid
+C London
+
+test 9 passed
+A Lima
+B Oslo
+
+test 10 passed
+A [dead]
+B [dead]
+C [dead]
+D Paris
+E Austin
+
+test 11 passed
+Name               Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------
+Diplomacy.py         104      6     50      3    94%   21, 35->exit, 52, 87, 159-162
+TestDiplomacy.py      69      0      2      0   100%
+--------------------------------------------------------------
+TOTAL                173      6     52      3    96%

@@ -12,14 +12,14 @@
 
 import sys
 
-from Diplomacy import diplomacy_solve
+from Diplomacy import diplomacy_eval
 
 # ----
 # main
 # ----
 
 if __name__ == "__main__":
-    diplomacy_solve(sys.stdin, sys.stdout)
+    diplomacy_eval(sys.stdin, sys.stdout)
 
 """ #pragma: no cover
 $ cat RunDiplomacy1.in

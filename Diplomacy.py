@@ -14,9 +14,6 @@ class Army:
     def getLocation(self):
         return self.location
 
-    def setLocation(self, newLocation):
-        self.location = newLocation
-
     def getMovement(self):
         return self.movement
 
@@ -118,7 +115,7 @@ class Diplomacy:
 
 def diplomacy_solve(inputs):
     game = Diplomacy(inputs.split("\n"))
-    # print(game.res + "\n")
+    print(game.res + "\n")
     return game.res + "\n"
 
 def diplomacy_read(s):

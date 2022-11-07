@@ -41,8 +41,8 @@ else                                   # UTCS
     DOC := docker run -it -v $$(PWD):/usr/cs330e -w /usr/cs330e fareszf/python
 endif
 
-diplomacy-tests:
-	git clone https://gitlab.com/fareszf/cs330e-diplomacy-tests.git
+#diplomacy-tests:
+#	git clone https://gitlab.com/fareszf/cs330e-diplomacy-tests.git
 
 Diplomacy.html: Diplomacy.py
 	$(PYDOC) -w Diplomacy
@@ -52,6 +52,7 @@ Diplomacy.log:
 
 RunDiplomacy.tmp: RunDiplomacy.in RunDiplomacy.out RunDiplomacy.py
 	$(PYTHON) RunDiplomacy.py < RunDiplomacy.in > RunDiplomacy.tmp
+    timeout 3:
 	diff --strip-trailing-cr RunDiplomacy.tmp RunDiplomacy.out
 
 TestDiplomacy.tmp: TestDiplomacy.py
@@ -131,4 +132,4 @@ versions:
 	which        $(PYTHON)
 	$(PYTHON)    --version
 
-test: Diplomacy.html Diplomacy.log RunDiplomacy.tmp TestDiplomacy.tmp diplomacy-tests check
+test: Diplomacy.html Diplomacy.log RunDiplomacy.tmp TestDiplomacy.tmp check
