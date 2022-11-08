@@ -57,7 +57,7 @@ RunDiplomacy.tmp: RunDiplomacy.in RunDiplomacy.out RunDiplomacy.py
 
 TestDiplomacy.tmp: TestDiplomacy.py
 	$(COVERAGE) run    --branch TestDiplomacy.py >  TestDiplomacy.tmp 2>&1
-	$(COVERAGE) report -m                      >> TestDiplomacy.tmp
+	$(COVERAGE) report -m                      >> TestDiplomacy.out
 	cat TestDiplomacy.tmp
 
 check:

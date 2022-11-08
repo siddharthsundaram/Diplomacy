@@ -156,7 +156,7 @@ def diplomacy_eval(r, w):
 
 
 if __name__ == "__main__":
-    diplomacy_solve("A Madrid Move London\nB Barcelona Move London\nC Cairo Move London\nD Oslo Move London\nE Amsterdam Support A\nF Moscow Support B\nG Shanghai Support C\nH Tokyo Support D\nI Austin Move Amsterdam\nJ Taipei Move Moscow\nK Stockholm Move Shanghai\nL Lima Move Tokyo\n")
+    diplomacy_solve("A London Hold\nB Dallas Move London\nC Lima Support B\nD Austin Move Lima\nE Shanghai Support C\n")
     r = StringIO(("A Madrid Hold\nB Barcelona Move Madrid\nC London Support B\n"))
     # print(diplomacy_read(r))
     w = StringIO()

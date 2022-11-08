@@ -1,49 +1,32 @@
 A London
 B Madrid
 
-test 1 passed
 A London
 
-test 2 passed
 A [dead]
 B Madrid
 C London
 
-test 3 passed
 A [dead]
 B [dead]
 C [dead]
 
-test 4 passed
 A [dead]
 B [dead]
 C [dead]
 D Paris
 E Austin
 
-test 5 passed
-test 6 passed
-test 7 passed
-test 8 passed
 A [dead]
 B Madrid
 C London
 
-test 9 passed
 A Lima
 B Oslo
 
-test 10 passed
 A [dead]
 B [dead]
 C [dead]
 D Paris
 E Austin
 
-test 11 passed
-Name               Stmts   Miss Branch BrPart  Cover   Missing
---------------------------------------------------------------
-Diplomacy.py         104      6     50      3    94%   21, 35->exit, 52, 87, 159-162
-TestDiplomacy.py      69      0      2      0   100%
---------------------------------------------------------------
-TOTAL                173      6     52      3    96%
