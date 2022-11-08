@@ -5,7 +5,7 @@ before_script:
     - make versions	
     - printenv | sort
 
-collatz:
+diplomacy:
     image: fareszf/python
     script:
     - ls -al

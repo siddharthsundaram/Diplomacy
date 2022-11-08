@@ -1,0 +1,100 @@
+commit dc37a4e890aee469953f387a6a3e2d42335190da
+Merge: 41fdc6c 6508f3b
+Author: Siddharth Sundaram <siddharthsundaram@utexas.edu>
+Date:   Tue Nov 8 04:42:18 2022 +0000
+
+    Merge branch 'dev' into 'main'
+    
+    Dev
+    
+    See merge request sidsun/Diplomacy!1
+
+commit 6508f3bab508f6623201741e64648765d7be4a2b
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Mon Nov 7 22:39:36 2022 -0600
+
+    cleaned up Diplomacy.py
+
+commit 651880c538b168350b85d0ced9651cacc7376ad6
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Mon Nov 7 22:25:25 2022 -0600
+
+    wrote all acceptance tests and outputted coverage to TestDiplomacy.out
+
+commit f8812fe4aba151a9d6139ffb481052e038ff46cd
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Mon Nov 7 14:20:55 2022 -0600
+
+    fixed makefile
+
+commit 6c60b36b4059a989bbecb3004f4a3efca40359c7
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Sun Nov 6 01:05:51 2022 -0600
+
+    wrote test cases for file reading and writing functions
+
+commit b04c40d2b2f930090e2ee698bccc37c5592d5b08
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Sun Nov 6 01:08:33 2022 -0500
+
+    adding makefile and read/write functions
+
+commit e16866ee5a9fa9c94dea05b366839a4217e76f4b
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Sat Nov 5 20:21:10 2022 -0500
+
+    finished unit tests and acceptance tests
+
+commit 3c4f844110898435bed39417199e1ad55273c2dd
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Wed Nov 2 12:59:32 2022 -0500
+
+    test cases
+
+commit bad9972ed1e07eae0fe617283e6594db47c408a7
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Wed Oct 26 20:31:14 2022 -0500
+
+    completed fight logic, made diplomacy class, and completed logic part of project
+
+commit 2d47d2c0c889a659f54c513523a9260ab9975691
+Author: sidsun <siddharthsundaram@utexas.edu>
+Date:   Wed Oct 26 12:47:08 2022 -0500
+
+    non-code logic for fight added in comments
+
+commit dd5cc2497f4f486f249d8b9d24b602052acc4863
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Tue Oct 25 15:54:59 2022 -0500
+
+    Fixed setup function
+
+commit 3fb8f27be77a4c8809b86cd4da056c85b5fbe891
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Mon Oct 24 19:01:52 2022 -0500
+
+    Worked on fight function to account for loss in support
+
+commit 24128710b2cd5d06b75f6f6533d00a7065f02279
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Mon Oct 24 13:40:20 2022 -0500
+
+    Began fight function, added .in file
+
+commit a22730ba3523338770cacfe72adea69a922d1fd9
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Sun Oct 23 19:12:17 2022 -0500
+
+    Added inputs function
+
+commit 41fdc6cbc389081e9b8299e77eb8ccfbaab2c0f4
+Author: Lauren Adams <laurensmadams@utexas.edu>
+Date:   Sun Oct 23 18:55:33 2022 -0500
+
+    Drafting Diplomacy Script
+
+commit 8b0c7f58c33370216054cc6ff30d82143fa0d19d
+Author: Siddharth Sundaram <siddharthsundaram@utexas.edu>
+Date:   Sun Oct 23 23:51:39 2022 +0000
+
+    Initial commit
