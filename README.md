@@ -31,6 +31,10 @@ C Brussels
 
 D Lima
 
+## Issues and Pipeline
+For issues, pipeline, or other questions, visit this link:
+
+https://gitlab.com/sidsun/Diplomacy
 
 ## Authors and acknowledgment
 siddharthsundaram
