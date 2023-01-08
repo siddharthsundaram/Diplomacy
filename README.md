@@ -67,11 +67,17 @@ B London Hold
 C Paris Move Brussels
 D Lima Support A
 
+
 Example output:
+
 A London
+
 B [dead]
+
 C Brussels
+
 D Lima
+
 
 ## Support
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
